@@ -5,7 +5,7 @@ include { BOWTIE_BUILD } from '../modules/bowtie_build'
 workflow PREPARE_GENOME {
 
     main:
-    DOWNLOAD_FASTA()
+    DOWNLOAD_FASTA(params.fasta_url)
     GUNZIP_FASTA(DOWNLOAD_FASTA.out.fasta_gz)
     BOWTIE_BUILD(GUNZIP_FASTA.out.fasta)
 
