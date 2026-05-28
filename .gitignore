@@ -47,3 +47,18 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# pycache folder and files
+*/__pycache__
+*/*.pyc
+
+# log files
+*.log*
+.nextflow
+
+# data files
+data/*
+samplesheet.csv
+reference
+results
+work
