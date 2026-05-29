@@ -30,6 +30,7 @@ FASTQ
   ├── Count matrix merging
   └── MultiQC report
 ```
+![WORKFLOW](dag.png)
 
 ---
 
