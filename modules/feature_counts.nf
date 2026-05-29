@@ -9,6 +9,7 @@ process FEATURE_COUNTS {
 
     output:
     tuple val(sample), path("${sample}.txt"), emit: counts
+    path "${sample}.txt.summary", emit: summary
 
     script:
     """

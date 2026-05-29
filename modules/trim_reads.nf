@@ -7,9 +7,13 @@ process TRIM_READS {
 
     output:
     tuple val(sample), path("${sample}_trimmed.fastq.gz"), emit: trimmed
+    path "${sample}_cutadapt.log",                         emit: log    // ← añadido
 
     script:
     """
-    cutadapt -j ${params.threads} -m 10 -M 50 -o ${sample}_trimmed.fastq.gz ${reads}
+    cutadapt -j ${params.threads} -m 10 -M 50 \
+        -o ${sample}_trimmed.fastq.gz \
+        ${reads} \
+        > ${sample}_cutadapt.log
     """
 }
