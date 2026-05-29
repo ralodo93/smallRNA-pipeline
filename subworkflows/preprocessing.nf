@@ -19,4 +19,7 @@ workflow PREPROCESSING {
 
     emit:
     trimmed = TRIM_READS.out.trimmed
+    fastqc_raw     = FASTQC_RAW.out.zip
+    fastqc_trimmed = FASTQC_TRIMMED.out.zip
+    trim_logs      = TRIM_READS.out.log
 }

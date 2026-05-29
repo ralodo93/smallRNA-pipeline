@@ -16,4 +16,5 @@ workflow ALIGNMENT {
 
     emit:
     bam = SORTBAM.out.bam
+    bowtie_logs = BOWTIE_ALIGN.out.log
 }

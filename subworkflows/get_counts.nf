@@ -17,4 +17,7 @@ workflow GET_COUNTS {
     FEATURE_COUNTS(bams, annotation_ch)
 
     MERGE_COUNTS(FEATURE_COUNTS.out.counts.map { sample, txt -> txt }.collect())
+    emit:
+    merged_counts = MERGE_COUNTS.out.merged
+    counts_summary = FEATURE_COUNTS.out.summary
 }

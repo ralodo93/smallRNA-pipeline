@@ -41,6 +41,7 @@ include { PREPROCESSING } from './subworkflows/preprocessing'
 include { PREPARE_GENOME } from './subworkflows/prepare_genome'
 include { ALIGNMENT } from './subworkflows/alignment'
 include { GET_COUNTS } from './subworkflows/get_counts'
+include { RUN_MULTIQC } from './subworkflows/multiqc'
 
 workflow {
 
@@ -87,4 +88,12 @@ workflow {
 
     // Get counts workflow
     GET_COUNTS(ALIGNMENT.out.bam)
+
+    RUN_MULTIQC(
+        PREPROCESSING.out.fastqc_raw.map     { s, f -> f },  // descarta val(sample)
+        PREPROCESSING.out.fastqc_trimmed.map { s, f -> f },
+        PREPROCESSING.out.trim_logs,
+        ALIGNMENT.out.bowtie_logs,
+        GET_COUNTS.out.counts_summary
+    )
 }

@@ -57,8 +57,6 @@ rsconnect/
 .nextflow
 
 # data files
-data/*
-samplesheet.csv
 reference
 results
 work
