@@ -15,7 +15,7 @@ dependencies:
   - bowtie=1.3.1=py312hf8dbd9f_10
   - brotli-python=1.2.0=py312hdb49522_1
   - bzip2=1.0.8=hda65f42_9
-  - c-ares=1.34.6=hb03c661_0
+  - c-ares=1.34.6
   - ca-certificates=2026.5.20=hbd8a1cb_0
   - cairo=1.18.4=he90730b_1
   - certifi=2026.5.20=pyhd8ed1ab_0
@@ -64,7 +64,7 @@ dependencies:
   - libcblas=3.11.0=8_h0358290_openblas
   - libcups=2.3.3=h7a8fb5f_6
   - libcurl=8.20.0=hcf29cc6_0
-  - libdeflate=1.25=h17f619e_0
+  - libdeflate=1.25
   - libedit=3.1.20250104=pl5321h7949ede_0
   - libev=4.33=hd590300_2
   - libexpat=2.8.1=hecca717_0
@@ -146,7 +146,7 @@ dependencies:
   - pyyaml=6.0.3=py312h8a5da7c_1
   - readline=8.3=h853b02a_0
   - referencing=0.37.0=pyhcf101f3_0
-  - regex=2026.5.9=py312h4c3975b_0
+  - regex=2026.5.9
   - requests=2.34.2=pyhcf101f3_0
   - rich=15.0.0=pyhcf101f3_0
   - rich-click=1.9.7=pyh8f84b5b_0
@@ -160,15 +160,15 @@ dependencies:
   - tbb=2023.0.0=hab88423_2
   - tiktoken=0.12.0=py312hd04cf1f_3
   - tk=8.6.13=noxft_h366c992_103
-  - tqdm=4.67.3=pyh8f84b5b_0
+  - tqdm=4.67.3
   - typeguard=4.5.2=pyhcf101f3_0
   - typing-extensions=4.15.0=h396c80c_0
   - typing-inspection=0.4.2=pyhcf101f3_2
   - typing_extensions=4.15.0=pyhcf101f3_0
   - tzdata=2025c=hc9c84f9_1
-  - urllib3=2.7.0=pyhd8ed1ab_0
+  - urllib3=2.7.0
   - wheel=0.47.0=pyhd8ed1ab_0
-  - xopen=2.0.2=pyh707e725_2
+  - xopen=2.0.2
   - xorg-libice=1.1.2=hb9d3cd8_0
   - xorg-libsm=1.2.6=he73a12e_0
   - xorg-libx11=1.8.13=he1eb515_0
