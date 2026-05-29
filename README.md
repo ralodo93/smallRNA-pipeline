@@ -82,7 +82,7 @@ data/test/
 Run the test workflow with Docker:
 
 ```bash
-conda create -f environment.yml
+conda env create -f environment.yml
 conda activate mirna
 nextflow run main.nf -profile test,docker
 ```
