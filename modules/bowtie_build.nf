@@ -10,6 +10,6 @@ process BOWTIE_BUILD {
 
     script:
     """
-    bowtie-build ${fasta} ${params.index_name}
+    bowtie-build --threads ${params.threads} ${fasta} ${params.index_name}
     """
 }
