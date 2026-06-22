@@ -10,6 +10,6 @@ process FILTER_READS {
 
     script:
     """
-    filter_reads.py -i ${reads} -o ${sample}_filtered.fastq.gz --gap 3
+    filter_reads.py -i ${reads} -o ${sample}_filtered.fastq.gz
     """
 }
